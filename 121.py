@@ -16,12 +16,6 @@
 #                         max = prices[j]-prices[i]
 #         return max
 
-
-
-import time
-
-st = time.time()
-
 def maxProfit(prices):
         max = 0
         i=0
@@ -32,10 +26,3 @@ def maxProfit(prices):
             else:
                 i=j
         return max
-
-# Time limit exceeded for this array
-prices = [7,1,5,3,6,4]
-print(maxProfit(prices))
-et = time.time()
-
-print(et-st , "seconds")
